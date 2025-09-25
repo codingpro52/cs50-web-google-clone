@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            html{
+                height: 100%;
+                display: block;
+            }
+            body{
+                font-family: Arial, sans-serif;
+                position:relative;
+                min-height: 100%;
+                border-width: 1px 1px 1px 5px;
+                background-clip: padding-box;
+                border: solid transparent;
+                border-width: 1px 1px 1px 6px;
+                min-height: 28px;
+                background-clip: padding-box;
+                border: solid #fff;
+                border-width: 3px 0 0 3px;
+            }
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin: 40px 2% 0 45px;
+            }
+            form{
+                display: block;
+            }
+
+            .row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .labels {
+                font-size: 14px;
+                width: 200px; /* Adjust label width */
+                padding-right: 10px;
+                text-align: left;
+
+            }
+
+            .inp{
+                float: left;
+                width: 50%; /* Adjust input width */
+                padding: 5px;
+                padding-block: 1px;
+                font-weight: 400 ;
+                color: rgb(0, 0 ,0);
+                min-width: 167px;
+                min-height: 41px;
+                padding-right: 16px;
+
+            }
+            .inp input{
+                width:100%;
+                text-align: left;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                border-top: 1px solid #c0c0c0;
+                border-radius: 0px;
+                cursor: text;
+            }
+
+            img{
+                height: 24px;
+                width: 74px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-right: 30px;
+            }
+
+            .inp input:focus{
+                outline: none;
+                border: 1px solid #4578d0;
+                border-radius: 0px;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); 
+                        
+            }
+        
+            h3{
+                font-size: 16px;
+            }
+
+            .hor_line{
+                width: 100%;
+                border: 0;
+                display: block;
+                border-bottom:1px solid #ebebeb;
+                margin: 10px 0;
+            }
+
+            .adv-sea{
+                vertical-align: baseline;  
+                color:#d93025; 
+                font-size: 20px;
+                margin: 25px 35px
+            }
+            .main{
+                float:left;
+                display: inline-block;
+                min-width: 167px;
+                width: 16%;
+                font-size: 16px;
+                min-height: 42px;
+                font-weight: 500;
+                color: #333;
+                vertical-align: middle;
+                height: 30px;
+                display: table-cell;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">
+                <img src="static/image/Google_2015_logo.svg-2.png" alt="google image">
+            </a>
+            
+        </div>
+        <div class="adv-sea">
+            <label class="adv" style="margin-left: 10px;">Advance Search</label>
+        </div>
+        <hr class="hor_line">
+        <form action="https://www.google.co.uk/search" autocomplete="off">
+
+            <div class="flex-container">
+                <div class="main">
+                    <span class="labels" style="font-size: 100%; color: #333; font-weight: 500;">Find pages with</span>
+                </div>
+                <div class="row">
+                    <div class="labels" >
+                        <p>all these words:</p>  
+                    </div> 
+                    <div class="inp">
+                        <input  type="text" name="as_epq" autofocus>
+                    </div>
+    
+                </div>
+
+                <div class="row">
+                    <div class="labels">
+                        <p>this exact word or phrase:</p> 
+                    </div>
+                    <div class="inp">
+                        <input  type="text" name="as_q">
+                    </div>
+                </div>
+
+                <div class="row">    
+                    <div class="labels">
+                        <p>any of these words:</p>
+                    </div>
+                    <div class="inp">
+                        <input type="text" name="as_oq">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="labels">
+                        <p>none of these words:</p> 
+                    </div>
+                    <div class="inp">
+                        <input type="text" name="as_eq">
+                </div>
+                
+              
+            </div> 
+            <input type="submit" value="Advance Search" style="color: white; border-radius: 3px; background-color: #4d90fe; border: none; padding: 6px;">
+        </form>
+    </body>    
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <style>
+
+            .main-final{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                font-family: sans-serif;
+                color: black;
+                font: 13px / 27px Roboto, Arial, sans-serif;
+
+            }
+            
+            .links :hover{
+                text-decoration: underline;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 10px;
+                padding-right: 10px;                
+            }
+            .google-logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 92px;
+                max-height: 290px;
+                height: 150px;
+                width: 300px;
+                
+            }
+
+            .google-logo img{
+                position: absolute;
+                top: 27%;
+                left: 50%;
+                transform: translate(-50%, -40%); 
+                height: 92px;
+                width:272px;
+                
+
+            }
+
+            .main{
+                display: flex;
+                flex-direction: column;
+                max-width: 584px;
+                max-height: 46px;
+                margin-top: 100px;
+                border-radius: 24px;
+                box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+                background: #fff;
+                border: 1px solid #dfe1e5;
+
+
+            }
+
+            .search-container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: auto;
+                padding:0;
+                width:545px;
+                height: 46px;
+                margin-top: 0px;
+            }
+ 
+            
+            
+            .search-icon{
+                display: flex;
+                align-items: center;
+                padding-right: 13px;
+                padding-left: 14px;
+                height: 46px;
+            }
+
+            .icon{
+                width: 20;
+                height: 20;
+                line-height: 20px;
+                margin-top: 3px;
+            }
+
+            .parent{
+                display: flex;
+                align-items: center;
+            }
+
+            .text-cont{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                flex: 1;
+                width: 440px;
+                height: 46px;
+                color: transparent;
+                white-space: pre;
+                font-family: Arial, sans-serif;
+                position: relative;
+                font-size: 16px;
+                flex: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+ 
+            .text-cont input{
+                border-bottom: 8px solid transparent;
+                border: none;
+                outline: none;
+                resize: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center; /* Centers text horizontally */
+                font-size: 16px;
+                padding-top: 11px;
+                line-height: 22px;
+                background-color: transparent;
+                margin: 0;
+                padding: 0;
+                flex: 100%;
+                
+    
+            }
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                position: absolute;
+                top: 51%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 360px;
+                height: 58px;
+            }
+            
+            .buttons .button_1, .button_2{
+                border:1px solid #f8f9fa;
+                font-family: Arial, sans-serif;
+                color: #3c4043;
+                font-size: 14px;
+                margin: 0;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                border-radius: 4px;
+            }
+
+            .button_1,.button_2{
+                cursor: pointer;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <div class="links">
+            <a href="image.html" style="color: black;">Images</a>
+            <a href="advance.html">Advance Search</a>
+         </div>
+        <div class="google-logo">
+            <img src="static/image/Google_2015_logo.svg-2.png" alt="google logo image">
+        </div>
+        <div class="main-final">
+            <form action="https://www.google.com/search" autocomplete="off">
+                <div class="main">
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <svg  class="icon"   width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="9" r="6"></circle>
+                                <line x1="20" y1="20" x2="14" y2="14"></line>
+                            </svg>
+                        </div>
+                        <div class="parent">
+                            <div class="text-cont">
+                                <input type="text" name="q" class="search-bar">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="buttons">
+                        <button type="submit" class="button_1">Google Search</button>
+                        <button type="submit" name="btnI" value="I feeling lucy" class="button_2">I'm feeling lucky</button>
+                    </div>
+                </div>
+        </div>
+
+        </form>
+    </body>
+
+</html>
