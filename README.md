@@ -20,7 +20,7 @@ This is my first CS50 Web Development project. The goal was to replicate a simpl
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cs50-web-google-clone.git
+   git clone https://github.com/codingpro52/cs50-web-google-clone.git
 
 ## Credits
 
